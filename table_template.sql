@@ -1,0 +1,10 @@
+drop table TAIYUAN;
+create table TAIYUAN (image_path varchar(30), image_name varchar(30), description text);
+drop table DATONG;
+create table DATONG (image_path varchar(30), image_name varchar(30), description text);
+drop table YUNGANG;
+create table YUNGANG (image_path varchar(30), image_name varchar(30), description text);
+drop table WUTAI;
+create table WUTAI (image_path varchar(30), image_name varchar(30), description text);
+drop table BEIJING;
+create table BEIJING (image_path varchar(30), image_name varchar(30), description text);

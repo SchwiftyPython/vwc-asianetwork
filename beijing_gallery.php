@@ -12,7 +12,7 @@
     <script src="//code.jquery.com/jquery-1.10.2.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
     <script src="jquery.bsPhotoGallery.js"></script>
-    <link href="jquery.bsPhotoGallery.css" rel="stylesheet">    
+    <link href="jquery.bsPhotoGallery.css" rel="stylesheet">
     </script>
     <script>
       $(document).ready(function(){
@@ -28,10 +28,10 @@
   <body>
 
   <?php
-  $servername = 'localhost';
-	$username = 'root';
-	$password = '';
-	$database = 'bhannasauro';
+ $servername = 'localhost';
+      $username = 'vnlaughlin';
+      $password = 'cs480';
+    $database = 'vnlaughlin';
   $conn = new mysqli($servername, $username, $password, $database);
 
   // Check connection

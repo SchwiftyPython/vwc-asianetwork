@@ -14,8 +14,6 @@
     </script>
   </head>
 
-<?php	  session_start(); ?>
-
 <body>
 <nav class="navbar navbar-default navbar-fixed-top">
       <div class="container-fluid">
@@ -54,9 +52,9 @@
 
 	     /***connect to db -- update params as needed ***/
          $servername = 'localhost';
-         $username = 'root';
-         $password = '';
-         $database = 'bhannasauro';
+		 $username = 'vnlaughlin';
+		 $password = 'cs480';
+    	 $database = 'vnlaughlin';
          $conn = new mysqli($servername, $username, $password, $database);
 
          // Check connection
@@ -87,10 +85,10 @@
 		    <!-- /.container -->
 		    </div>
 		   </div>
-
+<!--
 		   <script type="text/javascript">
 		   	setTimeout("location.href ='upload_form.php';",1500);
-         </script>
+         </script> -->
 
  </body>
  </html>

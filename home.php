@@ -41,9 +41,9 @@
 
     <?php
     $servername = 'localhost';
-    $username = 'root';
-    $password = '';
-    $database = 'bhannasauro';
+    $username = 'vnlaughlin';
+    $password = 'cs480';
+    $database = 'vnlaughlin';
     $conn = new mysqli($servername, $username, $password, $database);
 
     // Check connection

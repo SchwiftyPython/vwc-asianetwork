@@ -14,7 +14,7 @@
     </script>
   </head>
 
-<?php	  session_start(); ?>
+<!--<?php	  session_start(); ?>-->
 
 <body>
 <nav class="navbar navbar-default navbar-fixed-top">

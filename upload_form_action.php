@@ -85,10 +85,10 @@
 		    <!-- /.container -->
 		    </div>
 		   </div>
-<!--
+
 		   <script type="text/javascript">
 		   	setTimeout("location.href ='upload_form.php';",1500);
-         </script> -->
+         </script>
 
  </body>
  </html>

@@ -79,8 +79,8 @@
 
 		      while($row = $result->fetch_assoc()){
 		        $path = $row['image_path'];
-				    $path .= $row['image_name'];
-		 	      $description = $row['description'];
+				$path .= $row['image_name'];
+		 	    $description = $row['description'];
 
 		?>
 
@@ -89,6 +89,10 @@
                 <img alt=""  src="<?php echo $path ?>">
                 <div class="text"><?php echo $description ?></div>
            </li>
+           <form action='delete.php?name="<?php echo $description; ?>"' method="post">
+		           <input type="hidden" name="description" value="<?php echo $description; ?>">
+		           <input type="submit" name="submit" value="Delete">
+           </form>
 
         <?php
         }

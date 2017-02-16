@@ -8,7 +8,9 @@ China. So far, it is a few picture galleries and a way to upload media.
 V.1.1 Changes
 
 -Can post pictures with title, description and location to different galleries. 
+
 -Added links to direct each picture to a page.
+
 -Brand new description box to allow a variety of text formats
 
 More information can be found here: 

@@ -1,0 +1,66 @@
+@import url(https://fonts.googleapis.com/css?family=Bree+Serif);
+
+body {
+  background:#ffffff;
+
+}
+ul {
+    padding:0 0 0 0;
+    margin:0 0 40px 0;
+}
+ul li {
+    list-style:none;
+    margin-bottom:10px;
+}
+
+.text {
+  /*font-family: 'Bree Serif';*/
+  color:#666;
+  font-size:11px;
+  margin-bottom:10px;
+  padding:12px;
+  background:#fff;
+}
+
+h1{
+  font: sans-serif;
+  color: #DDEDE2;
+}
+
+.jumbotron {
+  color: rgba(12,68,32,0.75);
+  height: 75%;
+  width: 100%;
+  padding: 150px 100px;
+  max-width: auto;
+
+}
+.container .row{
+  padding: 10px;
+  margin-bottom: 0;
+}
+
+.container .panel{
+  width: 100%;
+}
+
+.carousel-inner > .item > img,
+.carousel-inner > .item > a > img {
+  width: 70%;
+  margin: auto;
+  image-orientation: from-image;
+}
+
+img {
+    image-orientation: from-image;
+    max-width: auto;
+    max-height: auto;
+}
+
+.item {
+  max-height: 900px;
+}
+
+.active {
+  max-height: 900px;
+}

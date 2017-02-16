@@ -1,3 +1,6 @@
+<?php require_once('includes/connect.php'); ?>
+<?php require_once('includes/functions.php'); ?>
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -15,44 +18,10 @@
   </head>
 
 <body>
-<nav class="navbar navbar-default navbar-fixed-top">
-      <div class="container-fluid">
-        <div class="navbar-header">
-          <a class="navbar-brand" href="#">VWC ASIANetwork Project</a>
-        </div>
-        <ul class="nav navbar-nav">
-        <li class="dropdown">
-        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Photo Galleries
-        <span class="caret"></span></a>
-        <ul class="dropdown-menu">
-          <li><a href="taiyuan_gallery.php">Taiyuan</a></li>
-          <li><a href="wutai_gallery.php">Wutai Shan</a></li>
-		      <li><a href="yungang_gallery.php">Yungang Grottoes</a></li>
-          <li><a href="datong_gallery.php">Datong</a></li>
-          <li><a href="beijing_gallery.php">Beijing</a></li>
-        </ul>
-        </li>
-      </ul>
-      <ul class="nav navbar-nav navbar-right">
-      <li><a href="upload_form.php"><span class="glyphicon glyphicon-user"></span> Submit Media</a></li>
-      </ul>
-      </div>
-    </nav>
 
-    <?php
-    $servername = 'localhost';
-    $username = 'vnlaughlin';
-    $password = 'cs480';
-    $database = 'vnlaughlin';
-    $conn = new mysqli($servername, $username, $password, $database);
+	<!-- NavBar -->
+	<?php require_once('stylesheets/navbar.php'); ?>
 
-    // Check connection
-    if ($conn->connect_error) {
-        die("Connection failed: " . $conn->connect_error);
-    }
-    echo "Connected successfully";
-
-    ?>
 
     <div id="myCarousel" class="carousel slide" data-ride="carousel">
 	  <!-- Indicators -->
@@ -68,12 +37,8 @@
 	  <div class="carousel-inner" role="listbox">
 
 	  <?php
-	    $sql = "select * from BEIJING ORDER BY RAND()";
-	  	$result = $conn->query($sql);
-	    $row = $result->fetch_assoc();
-	       $path = $row['image_path'];
-	       $path .= $row['image_name'];
-	       $description = $row['description'];
+	    $sql = "select * from UPLOAD where location='BEIJING' ORDER BY RAND()";
+	  	select();
 
 	  ?>
 	    <div class="item active">
@@ -81,13 +46,8 @@
 	    </div>
 
 	    <?php
-			    $sql = "select * from TAIYUAN ORDER BY RAND()";
-			  	$result = $conn->query($sql);
-			    $row = $result->fetch_assoc();
-			       $path = $row['image_path'];
-			       $path .= $row['image_name'];
-			       $description = $row['description'];
-
+			    $sql = "select * from UPLOAD where location='TAIYUAN' ORDER BY RAND()";
+			  	select();
 	  ?>
 
 	    <div class="item">
@@ -95,12 +55,8 @@
 	    </div>
 
 	    <?php
-			    $sql = "select * from WUTAI ORDER BY RAND()";
-			  	$result = $conn->query($sql);
-			    $row = $result->fetch_assoc();
-			       $path = $row['image_path'];
-			       $path .= $row['image_name'];
-			       $description = $row['description'];
+			    $sql = "select * from UPLOAD where location='WUTAI' ORDER BY RAND()";
+			  	select();
 
 	  ?>
 
@@ -109,12 +65,8 @@
 	    </div>
 
 	    <?php
-			    $sql = "select * from YUNGANG ORDER BY RAND()";
-			  	$result = $conn->query($sql);
-			    $row = $result->fetch_assoc();
-			    $path = $row['image_path'];
-			    $path .= $row['image_name'];
-			    $description = $row['description'];
+			    $sql = "select * from UPLOAD where location='YUNGANG' ORDER BY RAND()";
+			  	select();
 
 	  ?>
 
@@ -123,12 +75,8 @@
 	    </div>
 
 	    <?php
-			    $sql = "select * from DATONG ORDER BY RAND()";
-			  	$result = $conn->query($sql);
-			    $row = $result->fetch_assoc();
-			    $path = $row['image_path'];
-			    $path .= $row['image_name'];
-			    $description = $row['description'];
+			    $sql = "select * from UPLOAD where location='DATONG' ORDER BY RAND()";
+			  	select();
 
 	  ?>
 
